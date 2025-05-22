@@ -1,0 +1,14 @@
+name:  GitHub Actions Demo
+
+on: push
+
+jobs:
+
+ run-on: ubantu-latest
+ uses: ls -ltr
+ 
+
+
+
+
+

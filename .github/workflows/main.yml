@@ -4,14 +4,14 @@ on: push
 
 jobs:
  build:
-  runs-on: ubantu-latest
+  runs-on: Ubuntu-latest
 
   steps:
    - name: Checkout repository
      uses: actions/checkout@v4
 
    - name: List files
-     run: echo ls -ltr
+     run: ls -ltr
 
 
 

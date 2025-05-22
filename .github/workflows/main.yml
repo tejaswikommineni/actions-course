@@ -3,9 +3,14 @@ name:  GitHub Actions Demo
 on: push
 
 jobs:
+build:
+run-on: ubantu-latest
 
- run-on: ubantu-latest
- uses: ls -ltr
+steps:
+   - name: Checkout repository
+     uses: actions/checkout@v4
+     
+
  
 
 

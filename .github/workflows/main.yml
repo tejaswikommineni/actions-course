@@ -3,15 +3,20 @@ name:  GitHub Actions Demo
 on: push
 
 jobs:
-build:
-run-on: ubantu-latest
+ build:
+  runs-on: ubantu-latest
 
-steps:
+  steps:
    - name: Checkout repository
      uses: actions/checkout@v4
-     
 
- 
+   - name: List files
+     run: echo ls -ltr
+
+
+
+
+
 
 
 

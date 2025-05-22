@@ -1,0 +1,20 @@
+name: docker action Workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      who-to-greet:
+        description: who-to-greet
+        required: true
+        default: 'World'
+        type: string
+    outputs:
+      time:
+        description: The time the action was run
+
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.who-to-greet }}
